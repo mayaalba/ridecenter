@@ -1,0 +1,51 @@
+header {
+    background-color: darkseagreen;
+    height:250px;
+    width:98%;
+    margin:auto;
+    font-size: 100px;
+    text-align: center;
+}
+
+nav {
+    height:200px;
+    width:21%;
+    background-color: lightgrey;
+    position: absolute;
+    top:1.8%;
+    left:4%;
+    font-size: 100px;
+    text-align: center;
+}
+
+main {
+    height:1700px;
+    width:98%;
+    background-color: beige;
+    margin:auto;
+    
+}
+.picture {
+    background-color: black;
+    height:700px;
+    width:90%;
+    margin:auto;
+}
+
+.textbox {
+    background-color: whitesmoke;
+    height:700px;
+    width:90%;
+    margin:auto;
+    font-size: 100px;
+    text-align: center;
+}
+
+footer {
+    width:98%;
+    height:250px;
+    background-color: burlywood;
+    margin:auto;
+    font-size: 100px;
+    text-align: center;
+}
