@@ -62,14 +62,12 @@ nav a.aktiv {
 }
 
 main {
-    height:1000px;
+    height:1180px;
     width:98%;
     margin:auto;
-    
 }
-.picture {
-    background-color: black;
-    height:250px;
+.forsidebillede {
+    height:auto;
     width:100%;
     margin:auto;
     margin-top:15px;
@@ -87,7 +85,7 @@ main {
     color: rgb(122,144,124);
     height:95px;
     width:90%;
-    top:790px;
+    top:710px;
     font-size:15px;
     text-align: center;
     margin:auto;
@@ -105,13 +103,24 @@ h2 {
     font-size:30px;
 }
 
-.video {
-    margin:auto;
-    width:93%;
-    height:220px;
-    background-color:black;
-    top:920px;
+#video {
     position:absolute;
+    top:835px;
+    left:7.5%;
+    width:85%;
+    height:auto;
+    margin:auto;
+    border:0px;
+    z-index:-1;
+}
+
+#googlemap {
+    position:absolute;
+    top:1010px;
+    margin:auto;
+    height:300px;
+    width:93%;
+    border:0;
     z-index:-1;
 }
 
@@ -142,11 +151,11 @@ footer {
         font-size:25px;
         top:50px;
         position:absolute;
-        left:28%;
+        left:40%;
     }    
     
     .logo {
-        left:175px;
+        left:110px;
         max-width:150px;
     }
     
@@ -158,25 +167,98 @@ footer {
         font-size: 20px;
     }
     
-    .picture {
-        height: 500px;
+    h2 {
+        text-align: left;
+    }
+    
+    .textbox{
+        width:320px;
+        margin:0px;
+    }
+    
+    .textbox2 {
+        width:200px;
+        height:150px;
+        top:720px;
+        right:13%
+    }
+    
+    main {
+        height:1500px;
+        width:80%;
+    }
+    
+    #video {
+        height:350px;
+        width:78%;
+        top:950px;
+        left:11%;
+    }
+    
+    #googlemap {
+        width:600px;
+        height:300px;
+        top:1350px;
+        right:11%;
+    }
+    
+    footer {
+        width:80%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .greenspace {
+        width:80%;
+    }
+    
+    header {
+        height:130px;
+        width:80%;
+    }
+
+    .texthead {
+        font-size:25px;
+        top:50px;
+        position:absolute;
+        left:30%;
+    }    
+    
+    .logo {
+        left:140px;
+        max-width:150px;
+    }
+    
+    nav {
+        width:80%;
+    }
+    
+    nav a{
+        font-size: 20px;
     }
     
     .textbox2 {
         width:250px;
+        height:100px;
         top:40px;
         right:15%
+    }
+    
+    #video {
+        width:50%;
+        top:1200px;
+        right:10%;
+        margin:0px;
+    }
+    
+    #googlemap {
+        width:78%;
+        top:2000px;
     }
     
     main {
         height:2100px;
         width:80%;
-    }
-    
-    .video {
-        height:500px;
-        width:79%;
-        top:1000px
     }
     
     footer {
