@@ -42,6 +42,7 @@ nav {
     width:98%;
     position: sticky;
     top:0;
+    z-index:1;
 }
 
 nav a {
@@ -68,12 +69,20 @@ main {
 }
 
 #mainheste {
-    height:3150px;
+    height:3300px;
+}
+
+#omosmain {
+    height:1050px;
+}
+
+#kontaktmain {
+    height:975px;
 }
 
 @media only screen and (min-width:375px) {
     #mainheste {
-        height:3450px;
+        height:3650px;
     }
 }
 
@@ -117,10 +126,23 @@ main {
     margin-top:5px;
 }
 
+#omrideskoleheste {
+    margin-bottom: 140px;
+}
+
+#omostext {
+    margin-bottom:130px;
+}
+
 .columbia {
     height:auto;
     width:100%;
-    margin-top:100px;
+}
+
+.boxcolumbia {
+    padding:5px;
+    border: 3px solid rgb(122,144,124);
+    margin-bottom:5px;
 }
 
 .goldie {
@@ -128,9 +150,21 @@ main {
     width:100%;
 }
 
+.boxgoldie {
+    padding:5px;
+    border: 3px solid rgb(122,144,124);
+    margin-bottom:5px;
+}
+
 .julie {
     height:auto;
     width:100%;
+}
+
+.boxjulie {
+    padding:5px;
+    border: 3px solid rgb(122,144,124);
+    margin-bottom:5px;
 }
 
 .cayenne {
@@ -138,14 +172,32 @@ main {
     width:100%;
 }
 
+.boxcayenne {
+    padding:5px;
+    border: 3px solid rgb(122,144,124);
+    margin-bottom:5px;
+}
+
 .solo {
     height:auto;
     width:100%;
 }
 
+.boxsolo {
+    padding:5px;
+    border: 3px solid rgb(122,144,124);
+    margin-bottom:5px;
+}
+
 .angel {
     height:auto;
     width:100%;
+}
+
+.boxangel {
+    padding:5px;
+    border: 3px solid rgb(122,144,124);
+    margin-bottom:5px;
 }
 
 .textbox2 {
@@ -161,7 +213,27 @@ main {
 }
 
 #textbox2hest {
-    top:490px;
+    top:480px;
+}
+
+@media only screen and (min-width:375px) {
+    #textbox2hest {
+        top:495px;
+    }
+}
+
+#textbox2omos {
+    top:760px;
+}
+
+#textbox2kontakt {
+    top:670px;
+}
+
+@media only screen and (min-width:375px) {
+    #textbox2omos {
+        top:730px;
+    }
 }
 
 .textbox2:hover {
@@ -182,20 +254,19 @@ h1 {
     font-size:20px;
 }
 
-#video {
-    position:absolute;
-    top:835px;
-    left:7.5%;
-    width:85%;
-    height:auto;
-    margin:auto;
-    border:0px;
-    z-index:-1;
-}
-
 #googlemap {
     position:absolute;
     top:1010px;
+    margin:auto;
+    height:300px;
+    width:93%;
+    border:0;
+    z-index:-1;
+}
+
+#googlemapkontakt {
+    position:absolute;
+    top:800px;
     margin:auto;
     height:300px;
     width:93%;
@@ -217,7 +288,7 @@ footer {
     padding-top:25px;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 525px){
     .greenspace {
         width:80%;
     }
@@ -261,14 +332,30 @@ footer {
     }
     
     .textbox2 {
-        width:200px;
+        width:210px;
         height:150px;
-        top:720px;
-        right:13%
+        top:770px;
+        right:13%;
+        padding:5px;
     }
     
     #textbox2hest {
         top:530px;
+        width:220px;
+        height:100px;
+    }
+    
+    #textbox2kontakt {
+        top:600px;
+        width:250px;
+        height:100px;
+    }
+    
+    #textbox2omos {
+        height:90px;
+        width:250px;
+        top:780px;
+        left:10%;
     }
     
     main {
@@ -283,21 +370,11 @@ footer {
     #omrideskoleheste {
         width:320px;
         margin-left: 10px;
-    }
-    
-    .columbia {
-        margin-top:20px;
+        margin-bottom:20px;
     }
     
     #hestetextbox {
         font-size:30px;
-    }
-    
-    #video {
-        height:350px;
-        width:78%;
-        top:950px;
-        left:11%;
     }
     
     #googlemap {
@@ -307,12 +384,17 @@ footer {
         right:11%;
     }
     
+    #googlemapkontakt {
+        width:78%;
+        top:830px;
+    }
+    
     footer {
         width:80%;
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 860px){
     .greenspace {
         width:80%;
     }
@@ -342,31 +424,160 @@ footer {
         font-size: 20px;
     }
     
+    .video {
+        float:left;
+    }
+    
+    #omostext {
+        margin-bottom: 0px;
+    }
+    
     .textbox2 {
         width:250px;
         height:100px;
-        top:40px;
+        top:30px;
         right:15%
     }
     
-    #video {
-        width:50%;
-        top:1200px;
-        right:10%;
-        margin:0px;
+    #textbox2omos {
+        top:30px;
+        left:60%
+    }
+    
+    #textbox2hest {
+        top:30px;
+        right:15%;
+    }
+    
+    #textbox2kontakt {
+        top:30px;
+        right:15%
     }
     
     #googlemap {
-        width:78%;
-        top:2000px;
+        width:79%;
+        top:1500px;
+        left:10.5%;
+    }
+    
+    #googlemapkontakt {
+        top:1100px;
     }
     
     main {
-        height:2100px;
+        height:1600px;
         width:80%;
+    }
+    
+    #kontaktmain {
+        height:1200px;
+    }
+    
+    #mainheste {
+        height:2400px;
+    }
+    
+    #omrideskoleheste {
+        width:500px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    
+    .boxcolumbia {
+        height:555px;
+        width:47%;
+        float:left;
+        margin-bottom: 8px;
+    }
+    
+    .columbia {
+        margin:0px;
+    }
+    
+    .boxgoldie {
+        height:555px;
+        width:47%;
+        float:right;
+        margin-bottom:8px;
+    }
+    
+    .boxjulie {
+        height:555px;
+        width:47%;
+        float:left;
+        margin-bottom:8px;
+    }
+    
+    .boxcayenne {
+        height:555px;
+        width:47%;
+        float:right;
+        margin-bottom:8px;
+    }
+    
+    .boxsolo {
+        height:555px;
+        width:47%;
+        float:left;
+        margin-bottom:5px;
+    }
+    
+    .boxangel {
+        height:555px;
+        width:47%;
+        float:right;
+        padding:5px;
+        margin-bottom:5px;
+    }
+    
+    .rideskolehestetekst {
+        margin-bottom: 5px;
+        margin-top:5px;
     }
     
     footer {
         width:80%;
+    }
+}
+
+ @media only screen and (min-width: 1050px) {
+    .boxcolumbia {
+        height:660px;
+    }
+    
+    .columbia {
+        margin:0px;
+    }
+    
+    .boxgoldie {
+        height:660px;
+    }
+    
+    .boxjulie {
+        height:660px;
+    }
+    
+    .boxcayenne {
+        height:660px;
+    }
+    
+    .boxsolo {
+        height:660px;
+    }
+    
+    .boxangel {
+        height:660px;
+    } 
+     
+     #mainheste {
+         height:2800px;
+     }
+}
+
+@media only screen and (min-width:414px) and (max-width:450px) {
+    #textbox2omos {
+        top:710px;
     }
 }
