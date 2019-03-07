@@ -1,5 +1,10 @@
 html {
-    font-family:'Roboto', sans-serif;;
+    font-family:'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:black;
 }
 
 header {
@@ -128,6 +133,19 @@ main {
 
 #omrideskoleheste {
     margin-bottom: 140px;
+}
+
+#video {
+    width:560;
+    height:315;
+    position:absolute;
+    top:840px;
+}
+
+@media only screen and (min-width:375px) {
+    #video {
+        left:37px;
+    } 
 }
 
 #omostext {
@@ -334,7 +352,7 @@ footer {
     .textbox2 {
         width:210px;
         height:150px;
-        top:770px;
+        top:700px;
         right:13%;
         padding:5px;
     }
@@ -371,6 +389,35 @@ footer {
         width:320px;
         margin-left: 10px;
         margin-bottom:20px;
+    }
+    
+    #video {
+        height:300px;
+        width:500px;
+        top:990px;
+        left:130px;
+    }
+    
+    @media only screen and (min-width: 930px) {
+        #video {
+            top:900px;
+            left:115px;
+            height:500px;
+            width:700px;
+        }
+        
+        .textbox {
+            width:700px;
+            margin-left: auto;
+            margin-right:auto;
+        }
+    }
+    
+    @media only screen and (min-width:977px) {
+        #video {
+            top:950px;
+            left:150px;
+        }
     }
     
     #hestetextbox {
@@ -422,10 +469,6 @@ footer {
     
     nav a{
         font-size: 20px;
-    }
-    
-    .video {
-        float:left;
     }
     
     #omostext {
@@ -574,10 +617,38 @@ footer {
      #mainheste {
          height:2800px;
      }
+     
+     #video {
+         top:1030px;
+         height:450px;
+         left:230px;
+     }
 }
 
 @media only screen and (min-width:414px) and (max-width:450px) {
     #textbox2omos {
         top:710px;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    #video {
+        top:1050px;
+        left:290px;
+    }
+}
+
+@media only screen and (min-width:1290px) {
+    #video {
+        top:1100px;
+        left:350px;
+    }
+    
+    main {
+        height:1900px;
+    }
+    
+    #googlemap {
+        top:1800px;
     }
 }
